@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <title>app</title>
+   
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+   
+
+ </head>
+    <body>
+        <div class="container">
+        <div class="budget"> full Budget:<br>0$ </div>
+        <div class="row">
+            <div class="col-md-6" id="income-budget">Total income:<br>0$ </div>
+            <div class="col-md-6" id="expense-budget">Total expense:<br>0$ </div>
+        </div>
+        
+        <div class = "input-data">
+            <form onsubmit="
+            return false">
+            <input id="name" type="text" class="add-name"  pattern="[a-zA-Z0-9 ]+"  title="Add a valid name" placeholder="Name" required/>
+            <input id="value" type="number" class="add-value" min="0" placeholder="value" required>
+            <input type="reset">
+            <div class="input-button">
+            <button onclick="addIncome()" class="btn btn-primary">Add Income</button>
+            <button onclick="addExpense()" class="btn btn-danger">Add Expense </button>
+            <button onclick="deleteRecipe()" class="btn btn-warning">Delete</button>
+            </div>
+            </form>
+            <div class="items-list">
+              <div class="row">
+                <div class="col-md-6" id="income-list"></div>
+                <div class="col-md-6" id="expense-list"></div>
+             </div>  
+            </div>
+            
+         </div>
+        </div>
+         <script src="app2.js"></script>
+    </body>
+    
+
+</html>
