@@ -1,20 +1,29 @@
 <!DOCTYPE HTML>
 <html>
  <head>
-    <title>app</title>
+    <title>Budgety</title>
    
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="./Images/wallet.png"/>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500&display=swap" rel="stylesheet">
    
 
  </head>
     <body>
         <div class="container">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand title" href="#">
+                <img src="./Images/wallet.png" width="30" height="30" class="d-inline-block" alt="">
+                   Budgety
+            </a>
+        </nav>
         <div class="budget"> full Budget:<br>0$ </div>
         <div class="row">
-            <div class="col-md-6" id="income-budget">Total income:<br>0$ </div>
-            <div class="col-md-6" id="expense-budget">Total expense:<br>0$ </div>
+            <div class="col-md-6" id="income-budget">Income Budget:<br>0$ </div>
+            <div class="col-md-6" id="expense-budget">Expense Budget:<br>0$ </div>
         </div>
         
         <div class = "input-data">
@@ -22,11 +31,11 @@
             return false">
             <input id="name" type="text" class="add-name"  pattern="[a-zA-Z0-9 ]+"  title="Add a valid name" placeholder="Name" required/>
             <input id="value" type="number" class="add-value" min="0" placeholder="value" required>
-            <input type="reset">
+            <input class="btn btn-warning btn-sm" type="reset">
             <div class="input-button">
             <button onclick="addIncome()" class="btn btn-primary">Add Income</button>
             <button onclick="addExpense()" class="btn btn-danger">Add Expense </button>
-            <button onclick="deleteRecipe()" class="btn btn-warning">Delete</button>
+            <button onclick="deleteRecipe()" class="btn btn-warning">Clear</button>
             </div>
             </form>
             <div class="items-list">

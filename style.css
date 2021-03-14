@@ -1,4 +1,13 @@
+body {
+    background-color: white;
+    font-family: 'Roboto Slab', serif;;
+  }
 
+.title {
+    color: black;
+    font-weight: 500;
+    font-size: 40px;
+}
 .input-data{
     padding-top: 20px;
     padding-left:140px;
@@ -39,10 +48,13 @@
 }
 
 
-
 .budget{
     font-size: 40px;
     text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    color: black;
+    border-radius: 25px;
 }
 
 #income-budget{
@@ -51,6 +63,7 @@
     text-align: center;
 }
 
+
 #expense-budget{
     font-size: 25px;
     color: red;
@@ -58,7 +71,8 @@
 }
 
 #income-list{
-    color: #21c01f;
+    color: green;
+    border-radius: 15px;
     border-right: 1px solid rgb(189, 170, 170);
     
 }
