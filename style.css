@@ -13,11 +13,11 @@ body {
     padding-left:140px;
 }
 .add-name{
-    width: 500px;
+    width: 40%;
     height:25px;
 }
 .add-value{
-    width: 250px;
+    width: 11%;
     height: 25px;
     margin-left:40px;
 }
@@ -76,6 +76,7 @@ body {
     border-right: 1px solid rgb(189, 170, 170);
     
 }
+
 
 #expense-list{
     color: rgb(255, 0, 0);

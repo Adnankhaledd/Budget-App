@@ -2,7 +2,7 @@
 <html>
  <head>
     <title>Budgety</title>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="./Images/wallet.png"/>
@@ -29,13 +29,13 @@
         <div class = "input-data">
             <form onsubmit="
             return false">
-            <input id="name" type="text" class="add-name"  pattern="[a-zA-Z0-9 ]+"  title="Add a valid name" placeholder="Name" required/>
-            <input id="value" type="number" class="add-value" min="0" placeholder="value" required>
+            <input id="name" type="input" class="form__field add-name" name="add-item"  pattern="[a-zA-Z0-9 ]+"  title="Add a valid name" placeholder="Type the item name" required/>
+            <input id="value" type="number" class="add-value" min="0" placeholder="Price" size="4"  maxlength="4"  required>
             <input class="btn btn-warning btn-sm" type="reset">
             <div class="input-button">
-            <button onclick="addIncome()" class="btn btn-primary">Add Income</button>
-            <button onclick="addExpense()" class="btn btn-danger">Add Expense </button>
-            <button onclick="deleteRecipe()" class="btn btn-warning">Clear</button>
+            <button onclick="addIncome()" class="btn btn-primary btn-sm">Add Income</button>
+            <button onclick="addExpense()" class="btn btn-danger btn-sm">Add Expense </button>
+            <button onclick="deleteRecipe()" class="btn btn-warning btn-sm">Clear</button>
             </div>
             </form>
             <div class="items-list">
